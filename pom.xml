@@ -20,6 +20,27 @@
 
 	<build>
 		<plugins>
+		<plugin> 
+		    	<groupId>org.mule.tools.maven</groupId> 
+		    	<artifactId>mule-maven-plugin</artifactId> 
+		    	<version>2.0</version>
+		    	<configuration>
+		    	<deploymentType>cloudhub</deploymentType> 
+		    	<muleVersion>3.8.1</muleVersion>
+		    	<username>vijay_reddy</username> 
+		    	<password>Eaiesb@123</password>
+		    	<workerType>Micro</workerType> 
+		    	<redeploy>true</redeploy> 
+		    	<environment>Production</environment>
+		    	</configuration> 
+		    	<executions>
+		    		<execution>
+		     			<goals> 
+		        			<goal>deploy</goal>
+		      			</goals> 
+		     		</execution>
+		    	</executions> 
+		   	</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
@@ -163,6 +184,12 @@
             <groupId>org.mule.modules</groupId>
             <artifactId>mule-module-spring-config</artifactId>
             <version>${mule.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.2</version>
             <scope>provided</scope>
         </dependency>
     <dependency>
