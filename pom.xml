@@ -27,7 +27,7 @@
 		    	<configuration>
 		    	<deploymentType>cloudhub</deploymentType> 
 		    	<muleVersion>3.8.1</muleVersion>
-		    	<username>vijay_reddy</username> 
+		    	<username>Kiran_padam123</username> 
 		    	<password>Eaiesb@123</password>
 		    	<workerType>Micro</workerType> 
 		    	<redeploy>true</redeploy> 
